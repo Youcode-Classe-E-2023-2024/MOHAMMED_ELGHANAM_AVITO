@@ -8,9 +8,7 @@ if (isset($_POST['send'])) {
     $prix = $_POST['prix'];
     $insert_data = "INSERT INTO MED(username ,description ,prix ) VALUES ('$nom','$desc','$prix')";
     $query = mysqli_query($connect,$insert_data);
-    if ($query) {
-        echo "perfect";
-    }
+    
     
 }
     
